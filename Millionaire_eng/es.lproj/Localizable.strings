@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  Millionaire_eng_pro
+
+  Created by SkeletoN on 4/8/13.
+  Copyright (c) 2013 SkeletoN. All rights reserved.
+*/
+
+
+"LANGUAGE" = "es";
+"FIFTY"    = "¿Eliminar dos respuestas incorrectas?";
+"AUDIENCE" = "¿Mostrar las respuestas de otros jugadores?";
+"REPLACE"  = "¿Pasar a otra pregunta?";
+"THANKS"   = "Gracias!";
+"MAIN"     = "¿Quieres volver al Menú?";
+"CONFIRM"  = "¿Es esta tu respuesta final?";
+"YES"      = "Si";
+"NO"       = "No";
+"WALK"     = "Abandonar";
+"WAIT_TEXT"= "Te has quedado sin juegos! Usted puede comprar la versión completa o ver un anuncio y obtener un nuevo juego gratis ahora mismo o puede volver en una hora para conseguir una nueva partida.";
+"BUY"      = "Comprar";
+"WAIT"     = "Más tarde";
+"WATCH"     = "Ver los anuncio!";
+"COME_BACK"= "$ New game available! Don't miss it. $";
+"MESSAGE1" = "You haven't played for a long time! Come back and you will receive new questions.";
+"MESSAGE2" = "Today only! New questions! Play and win a million!";
+"MESSAGE3" = "Who wants to be a millionaire? Answer the questions and win a million!";
+"MESSAGE4" = "You haven't played for a long time! New questions are waiting for you!";
+"MESSAGE5" = "Haven't won a million yet? Quickly open the game!";
+
+"Download" = "Descargar";
+"Cancel" = "Cancelar";
+"Update Questions Database" = "Actualizar Base de Datos de Preguntas";
+"Play" = "Jugar";
+"How to Play?" = "¿Cómo Jugar?";
+"Score" = "Puntuación";
+"Full version" = "Versión Completa";
+"Submit" = "Enviar";
+"Report this question:" = "Denunciar estas preguntas:";
+"Bad question" = "Preguntas Erróneas";
+"Incorrect answer options" = "Opciones de respuestas incorrectas";
+"Innacurate translation" = "Traducción inexacta";
+"Spelling mistakes" = "Errores gramaticales";
+"Score" = "Puntuación";
+"Player Name" = "Nombre del Jugador";
+"Nr." = "Nr.";
+"Back" = "Volver";
+
+"How to Play?" = "¿Cómo Jugar?";
+
+"To begin the game, select Play from the main menu. Tap the answer you wish to enter. When the Final Answer popup appears, you can select Yes to canfirm you answer, No to choose again, or Walk Away to quit the current game with the money.If the player answers a question incorrectly, then all the money won so far is lost, except that the $1 000 and $32 000 prizes are guaranteed: if a player gets a question wrong above these levels, then the prize drops to the previous guaranteed prize.Lifeline icons will be displayed on the top - tap an icon to use it. Also on the top will be displayed the current money of the player." = "Para comenzar a jugar, elige Jugar del menú principal, da un toque en la respuesta seleccionada. Cuando aparezca el mensaje emergente de Respuesta Final, puedes elegir Si para confirmar la respuesta, No para elegir otra o Abandonar para dejar la partida con el dinero.\nSi el jugador contesta a una pregunta de manera incorrecta, perderá todo el dinero acumulado hasta entonces, pero los premios de €1 000 y €32 000 están garantizados: si un jugador contesta incorrectamente una vez superados estos niveles, la cantidad del premio disminuirá hasta el anterior premio garantizado.\nLos iconos de los comodines están en la parte superior – dales un toque para utilizarlos. Aquí también se muestra la cantidad de dinero que tiene el jugador.";
+
+"Show list preview of the question and the current position of the player in the game" = "Muestra la vista preliminar de la pregunta y la posición del jugador en la partida.";
+
+"The game ends when the player answers a question incorrectly, decides not to answer a question, or answers all questions correctly and win the top prize of $ 1 000 000." = "El juego termina cuando el jugador contesta a una pregunta de manera incorrecta, decide no contestar a  una pregunta o contesta a todas las preguntas correctamente y gana el premio más alto de €1 000 000.";
+
+"Lifelines" = "Comodines";
+
+"You are given three Lifelines to use throughout the course of a game.  Each lifeline can only be used once." = "Tienes tres comodines para utilizar a lo largo de la partida. Cada uno de ellos solo se puede usar una vez.";
+
+"Fifty-Fifty (50:50)." = "Cincuenta por ciento (50:50).";
+
+"Player asks the computer to randomly eliminate two of the incorrect answer choices, leaving player with a choice between the correct answer and one incorrect one." = "El jugador pide a la computadora que elimine de manera aleatoria dos de las respuestas incorrectas, dejándole con la respuesta correcta y una incorrecta.";
+
+"Ask the Real Players." = "Preguntar a los Jugadores Reales.";
+
+"This Lifeline show how other players answered." = "Este Comodín muestra las respuestas de jugadores reales.";
+
+"Switch the Question." = "Cambiar la Pregunta.";
+
+"If the player has not chosen a final answer on the revealed question, this Lifeline entitles the player to switch out the original question for another question of the same value." = "Si el jugador no elige una respuesta final a una pregunta, puede cambiarla con este Comodín por otra pregunta del mismo valor.";
+
+// images
+"win_bg.jpg" = "win_bg_es.jpg";
+"logo_win.png" = "logo_win_es.png";
+"logo.png" = "logo_es.png";
+"ipad_logo.png" = "ipad_logo_es.png";
+"Logo_Milionaire_HD" = "ES";
+"Text_Milionaire_HD" = "ES_text";

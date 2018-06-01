@@ -1,0 +1,10 @@
+git_url "https://github.com/admincaf/certificates.git"
+
+type "development" # The default type, can be: appstore, adhoc or development
+
+app_identifier ["millionaire.paid.6.language.alavar.soft.2014"]
+# username "user@fastlane.tools" # Your Apple Developer Portal username
+
+# For all available options run `match --help`
+# Remove the # in the beginning of the line to enable the other options
+git_branch "alavarsoft"

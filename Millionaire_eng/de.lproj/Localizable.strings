@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  Millionaire_eng_pro
+
+  Created by SkeletoN on 4/8/13.
+  Copyright (c) 2013 SkeletoN. All rights reserved.
+*/
+
+
+"LANGUAGE" = "de";
+"FIFTY"    = "Zwei falsche Antworten beseitigen?";
+"AUDIENCE" = "Zeigen wie andere Spieler geantwortet haben?";
+"REPLACE"  = "Zu einer anderen Frage überspringen?";
+"THANKS"   = "Danke!";
+"MAIN"     = "Möchten Sie wirklich zum Menü gehen?";
+"CONFIRM"  = "Ist das Ihre endgültige Antwort?";
+"YES"      = "Ja";
+"NO"       = "Nein";
+"WALK"     = "Aussteigen";
+"WAIT_TEXT"= "Sie rannte aus Spiele! Sie können die Vollversion kaufen oder sehen Sie eine Anzeige und erhalten Sie sofort ein neues Spiel kostenlos, oder Sie können in einer Stunde wiederkommen, um ein neues Spiel zu bekommen.";
+"BUY"      = "Kaufen";
+"WAIT"     = "Später";
+"WATCH"     = "Anzeigen Ansehen!";
+"COME_BACK"= "$ New game available! Don't miss it. $";
+"MESSAGE1" = "You haven't played for a long time! Come back and you will receive new questions.";
+"MESSAGE2" = "Today only! New questions! Play and win a million!";
+"MESSAGE3" = "Who wants to be a millionaire? Answer the questions and win a million!";
+"MESSAGE4" = "You haven't played for a long time! New questions are waiting for you!";
+"MESSAGE5" = "Haven't won a million yet? Quickly open the game!";
+
+"Download" = "Herunterladen";
+"Cancel" = "Widerrufen";
+"Update Questions Database" = "Fragendatenbank aktualisieren";
+"Play" = "Spielen";
+"How to Play?" = "Wie spielt man?";
+"Score" = "Spielstand";
+"Full version" = "Vollversion";
+"Submit" = "Speichern";
+"Report this question:" = "Diese Fragen melden:";
+"Bad question" = "Schlechte Fragen";
+"Incorrect answer options" = "Auswahl an falschen Antworten";
+"Innacurate translation" = "Ungenaue Übersetzung";
+"Spelling mistakes" = "Rechtschreibfehler";
+"Score" = "Spielstand";
+"Player Name" = "Name des Spielers";
+"Nr." = "Nr.";
+"Back" = "Zurück";
+
+"How to Play?" = "Wie spielt man?";
+
+"To begin the game, select Play from the main menu. Tap the answer you wish to enter. When the Final Answer popup appears, you can select Yes to canfirm you answer, No to choose again, or Walk Away to quit the current game with the money.If the player answers a question incorrectly, then all the money won so far is lost, except that the $1 000 and $32 000 prizes are guaranteed: if a player gets a question wrong above these levels, then the prize drops to the previous guaranteed prize.Lifeline icons will be displayed on the top - tap an icon to use it. Also on the top will be displayed the current money of the player." = "Aus dem Hauptmenü Spielen wählen, um mit dem Spiel anzufangen. Tippen Sie auf die Antwort, die Sie gerne einreichen möchten. Wenn Endgültige Antwort auftaucht, können Sie Ja auswählen, um Ihre Antwort zu bestätigen, Nein um nochmal zu wählen oder Aussteigen, um das laufende Spiel mit dem Geld zu beenden.\nWenn der Spieler eine Frage falsch beantwortet, ist das bis jetzt gewonnene Geld verloren, aber die 1000 und 32.000 Euro Gewinnsummen sind garantiert: wenn ein Spieler eine Frage nach diesen Stufen falsch beantwortet, fällt der Preis auf den davor garantierten Gewinn.\nJoker Symbole werden oben angezeigt - auf ein Symbol tippen, um es zu benutzen. Oben befindet sich außerdem die Geldsumme, die der Spieler momentan hat.";
+
+"Show list preview of the question and the current position of the player in the game" = "Vorschau der Frage und die aktuelle Stellung des Kandidats im Spiel anzeigen.";
+
+"The game ends when the player answers a question incorrectly, decides not to answer a question, or answers all questions correctly and win the top prize of $ 1 000 000." = "Das Spiel ist aus, wenn der Spieler eine Frage falsch beantwortet, sich dafür entscheidet, eine Frage nicht zu beantworten oder alle Fragen korrekt beantwortet und die Finalsumme von 1.000.000 Euro gewinnt.";
+
+"Lifelines" = "Joker";
+
+"You are given three Lifelines to use throughout the course of a game.  Each lifeline can only be used once." = "Sie bekommen drei Joker, die Sie während dem Verlauf eines Spiels benutzen können. Man darf jeden Joker nur einmal benutzen.";
+
+"Fifty-Fifty (50:50)." = "Fifty-Fifty (50:50).";
+
+"Player asks the computer to randomly eliminate two of the incorrect answer choices, leaving player with a choice between the correct answer and one incorrect one." = "Spieler bittet den Computer durch Zufallsprinzip zwei falsche Antworten auszublenden, und läßt dem Spieler die Wahl zwischen der richtigen und einer falschen Antwort.";
+
+"Ask the Real Players." = "Die Echten Spieler fragen.";
+
+"This Lifeline show how other players answered." = "Dieser Joker läßt Sie sehen, wie andere Spieler geantwortet haben.";
+
+"Switch the Question." = "Frage austauschen.";
+
+"If the player has not chosen a final answer on the revealed question, this Lifeline entitles the player to switch out the original question for another question of the same value." = "Falls der Spieler noch keine endgültige Antwort zur angegebenen Frage gegeben hat, kann dieser Joker dem Spieler ermöglichen, die ursprüngliche Frage mit einer anderen im gleichen Wert auszutauschen.";
+
+// images
+"win_bg.jpg" = "win_bg_de.jpg";
+"logo_win.png" = "logo_win_de.png";
+"logo.png" = "logo_de.png";
+"ipad_logo.png" = "ipad_logo_de.png";
+"Logo_Milionaire_HD" = "DE";
+"Text_Milionaire_HD" = "DE_text";

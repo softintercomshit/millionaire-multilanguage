@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  Millionaire_eng_pro
+
+  Created by SkeletoN on 4/8/13.
+  Copyright (c) 2013 SkeletoN. All rights reserved.
+*/
+
+
+"LANGUAGE" = "ru";
+"FIFTY"    = "Убрать два неправильных ответа?";
+"AUDIENCE" = "Показать как ответили другие игроки?";
+"REPLACE"  = "Заменить вопрос?";
+"THANKS"   = "Спасибо!";
+"MAIN"     = "Вы действительно хотите выйти в главное меню?";
+"CONFIRM"  = "Это ваш окончательный ответ?";
+"YES"      = "Да";
+"NO"       = "Нет";
+"WALK"     = "Забрать Деньги";
+"WAIT_TEXT"= "У вас закончилось количество игр. Вы можете купить полную версию прямо сейчас или зайти через час чтобы получить новую игру.";
+"BUY"      = "Купить";
+"WAIT"     = "Подождать";
+"WATCH"     = "Посмотреть рекламу!";
+"COME_BACK"= "$ Доступна новая игра! Не пропустите. $";
+"MESSAGE1" = "Вы давно не заходили в игру! Возвращайтесь и получите новые вопросы.";
+"MESSAGE2" = "Только сегодня! Новые вопросы! Играйте и выигрывайте миллион!";
+"MESSAGE3" = "Кто хочет стать миллионером? Отвечайте на вопросы и выигрывайте миллион!";
+"MESSAGE4" = "Вы давно не заходили в игру! Вас жду новые вопросы!";
+"MESSAGE5" = "Ещё не выиграли миллион? Скорее заходите в игру!";
+
+"Download" = "Загрузить";
+"Cancel" = "Отмена";
+"Update Questions Database" = "Обновить Базу Вопросов";
+"Play" = "Начать игру";
+"How to Play?" = "Как играть?";
+"Score" = "Выигрыши";
+"Full version" = "Полная версия";
+"Submit" = "Сохранить";
+"Report this question:" = "Сообщить об ошибке:";
+"Bad question" = "Неправильный вопрос";
+"Incorrect answer options" = "Неправильный ответ";
+"Innacurate translation" = "Удалите этот вопрос!";
+"Spelling mistakes" = "Орфографические ошибки";
+"Score" = "Выигрыш";
+"Player Name" = "Имя игрока";
+"Nr." = "Нр.";
+"Back" = "Назад";
+
+"How to Play?" = "Как играть?";
+
+"To begin the game, select Play from the main menu. Tap the answer you wish to enter. When the Final Answer popup appears, you can select Yes to canfirm you answer, No to choose again, or Walk Away to quit the current game with the money.If the player answers a question incorrectly, then all the money won so far is lost, except that the $1 000 and $32 000 prizes are guaranteed: if a player gets a question wrong above these levels, then the prize drops to the previous guaranteed prize.Lifeline icons will be displayed on the top - tap an icon to use it. Also on the top will be displayed the current money of the player." = "Выберите \"Начать игру\" в главном меню, чтобы начать игру. Нажмите на ответ, который вы хотите ввести. Когда окончательный ответ появится во всплывающем окне - выберите ДА, чтобы подтвердить ответ, - НЕТ - чтобы изменить решение, или Забрать Деньги - чтобы выйти из текущей игры с деньгами.\nВ случае, если вы отвечаете на вопрос неправильно - все выигранные на этот момент деньги теряются, за исключением \"Несгораемых\" сумм в 1000  и 32000 Рублей. В случае, если игрок дает неправильный вопрос пройдя уровни Несгораемых сумм - призом будет считаться последняя из этих сумм.\nИконки Подсказок расположены в верхней части экрана. Нажмите на иконку, чтобы использовать их. Помимо этого, в верхней части экрана отображается текущий выигрыш игрока.";
+
+"Show list preview of the question and the current position of the player in the game" = "Показательный список просмотра вопроса и текущее положение игрока.";
+
+"The game ends when the player answers a question incorrectly, decides not to answer a question, or answers all questions correctly and win the top prize of $ 1 000 000." = "      Игра заканчивается, когда игрок неправильно отвечает на вопрос, решает не отвечать на вопрос, или же отвечает на все вопросы правильно и выигрывает главный приз в 1 000 000 Рублей.";
+
+"Lifelines" = "Подсказки";
+
+"You are given three Lifelines to use throughout the course of a game.  Each lifeline can only be used once." = "На протяжении игры вы можете воспользоваться тремя подсказками. Каждой  подсказкой можно пользоваться один раз.";
+
+"Fifty-Fifty (50:50)." = "Пятьдесят на пятьдесят (50:50)";
+
+"Player asks the computer to randomly eliminate two of the incorrect answer choices, leaving player with a choice between the correct answer and one incorrect one." = "Игрок может попросить  iPhone  случайным образом удалить два неправильных варианта ответа, оставив остальных два, среди которых один будет правильным, другой - неправильный.";
+
+"Ask the Real Players." = "Помощь Реальных Игроков.";
+
+"This Lifeline show how other players answered." = "Это подсказка показывает как ответили другие игроки, но не забывайте что игроки тоже люди и тоже могут ошибаться!";
+
+"Switch the Question." = "Замена Вопроса.";
+
+"If the player has not chosen a final answer on the revealed question, this Lifeline entitles the player to switch out the original question for another question of the same value." = "Если игрок не выбрал окончательный ответ на предложенной вопрос, с помощью этой подсказки, он сохраняет право заменить исходный вопрос на другой вопрос идентичной ценности.";
+
+// images
+"win_bg.jpg" = "win_bg_ru.jpg";
+"logo_win.png" = "logo_win_ru.png";
+"logo.png" = "logo_ru.png";
+"ipad_logo.png" = "ipad_logo_ru.png";
+"Logo_Milionaire_HD" = "RU";
+"Text_Milionaire_HD" = "RU_text";

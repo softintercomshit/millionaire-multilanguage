@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  Millionaire_eng_pro
+
+  Created by SkeletoN on 4/8/13.
+  Copyright (c) 2013 SkeletoN. All rights reserved.
+*/
+
+
+"LANGUAGE" = "it";
+"FIFTY"    = "Rimuovere due risposte sbagliate?";
+"AUDIENCE" = "Mostrare come hanno risposto gli altri giocatori?";
+"REPLACE"  = "Passa ad un'altra domanda?";
+"THANKS"   = "Grazie!";
+"MAIN"     = "Vuoi davvero andare al Menu?";
+"CONFIRM"  = "E' la tua risposta definitiva?";
+"YES"      = "Si";
+"NO"       = "No";
+"WALK"     = "Lascia";
+"WAIT_TEXT"= "È stato eseguito fuori di giochi! È possibile acquistare la versione completa o visualizzare un annuncio e ottenere un nuovo gioco gratis adesso o si può tornare in un'ora per ottenere un nuovo gioco.";
+"BUY"      = "Acquistare";
+"WAIT"     = "Più tardi";
+"WATCH"     = "Vedi annunci!";
+"COME_BACK"= "$ New game available! Don't miss it. $";
+"MESSAGE1" = "You haven't played for a long time! Come back and you will receive new questions.";
+"MESSAGE2" = "Today only! New questions! Play and win a million!";
+"MESSAGE3" = "Who wants to be a millionaire? Answer the questions and win a million!";
+"MESSAGE4" = "You haven't played for a long time! New questions are waiting for you!";
+"MESSAGE5" = "Haven't won a million yet? Quickly open the game!";
+
+"Download" = "Scarica";
+"Cancel" = "Cancella";
+"Update Questions Database" = "Aggiorna Database Domande";
+"Play" = "Gioca";
+"How to Play?" = "Come Giocare?";
+"Score" = "Punteggio";
+"Full version" = "Versione Completa";
+"Submit" = "Invia";
+"Report this question:" = "Segnala questa domanda:";
+"Bad question" = "Domanda non idonea";
+"Incorrect answer options" = "Opzioni di risposta sbagliate";
+"Innacurate translation" = "Traduzione sbagliata";
+"Spelling mistakes" = "Errori di ortografia";
+"Score" = "Punteggio";
+"Player Name" = "Nome Giocatore";
+"Nr." = "Nr.";
+"Back" = "Indietro";
+
+"How to Play?" = "Come Giocare?";
+
+"To begin the game, select Play from the main menu. Tap the answer you wish to enter. When the Final Answer popup appears, you can select Yes to canfirm you answer, No to choose again, or Walk Away to quit the current game with the money.If the player answers a question incorrectly, then all the money won so far is lost, except that the $1 000 and $32 000 prizes are guaranteed: if a player gets a question wrong above these levels, then the prize drops to the previous guaranteed prize.Lifeline icons will be displayed on the top - tap an icon to use it. Also on the top will be displayed the current money of the player." = "Per iniziare il gioco, seleziona Gioca dal menu principale. Tocca la risposta che ritieni sia giusta. Quando la schermata di Risposta Definitiva appare, potrai selezionare Si per confermare la tua risposta, No per scegliere di nuovo, o Lascia per chiudere la partita attuale e prendere i soldi vinti fino a quel momento.\nSe il giocatore risponde in modo sbagliato ad una domanda, allora tutti i soldi vinti fino a quel momento saranno persi, ad eccezione dei premi da €1 000 e €32 000 che sono garantiti: se un giocatore sbaglia una domanda al di sopra di questi livelli, allora il premio cala fino al precedente premio garantito.\nLe icone salvavita sono mostrate in alto - tocca un icona per utilizzarla. Inoltre in alto saranno mostrati anche i soldi vinti fino a quel momento.";
+
+"Show list preview of the question and the current position of the player in the game" = "Mostra una lista delle domande e la posizione attuale del giocatore in gioco.";
+
+"The game ends when the player answers a question incorrectly, decides not to answer a question, or answers all questions correctly and win the top prize of $ 1 000 000." = "Il gioco finisce quando il giocatore risponde incorrettamente ad una risposta, decide di non rispondere ad una domanda, o risponde a tutte le domande in modo corretto vincendo il premio massimo di  €1 000 000.";
+
+"Lifelines" = "Salva Vita";
+
+"You are given three Lifelines to use throughout the course of a game.  Each lifeline can only be used once." = "Ti vengono dati tre Salva Vita da utilizzare durante il corso del gioco. Ogni salva vita può essere utilizzato solo una volta.";
+
+"Fifty-Fifty (50:50)." = "Cinquanta-Cinquanta (50:50).";
+
+"Player asks the computer to randomly eliminate two of the incorrect answer choices, leaving player with a choice between the correct answer and one incorrect one." = "Il giocatore chiede al computer di eliminare casualmente due delle risposte sbagliate, lasciando il giocatore con la risposta corretta ed una incorretta tra le quali scegliere.";
+
+"Ask the Real Players." = "Chiedi ai Giocatori Reali.";
+
+"This Lifeline show how other players answered." = "Questo Salva Vita mostra come hanno risposto altri giocatori.";
+
+"Switch the Question." = "Cambia la Domanda.";
+
+"If the player has not chosen a final answer on the revealed question, this Lifeline entitles the player to switch out the original question for another question of the same value." = "Se il giocatore non riesce a scegliere una risposta definitiva per la domanda presentata, questo Salva Vita da la possibilità al giocatore di cambiare la domanda originale con un'altra dallo stesso valore.";
+
+// images
+"win_bg.jpg" = "win_bg_it.jpg";
+"logo_win.png" = "logo_win_it.png";
+"logo.png" = "logo_it.png";
+"ipad_logo.png" = "ipad_logo_it.png";
+"Logo_Milionaire_HD" = "IT";
+"Text_Milionaire_HD" = "IT_text";

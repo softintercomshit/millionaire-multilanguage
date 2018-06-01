@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "remuneration": 100
+  },
+  {
+    "id": 2,
+    "level": 2,
+    "remuneration": 200
+  },
+  {
+    "id": 3,
+    "level": 3,
+    "remuneration": 300
+  },
+  {
+    "id": 4,
+    "level": 4,
+    "remuneration": 500
+  },
+  {
+    "id": 5,
+    "level": 5,
+    "remuneration": 1000
+  },
+  {
+    "id": 6,
+    "level": 6,
+    "remuneration": 2000
+  },
+  {
+    "id": 7,
+    "level": 7,
+    "remuneration": 4000
+  },
+  {
+    "id": 8,
+    "level": 8,
+    "remuneration": 8000
+  },
+  {
+    "id": 9,
+    "level": 9,
+    "remuneration": 16000
+  },
+  {
+    "id": 10,
+    "level": 10,
+    "remuneration": 32000
+  },
+  {
+    "id": 11,
+    "level": 11,
+    "remuneration": 64000
+  },
+  {
+    "id": 12,
+    "level": 12,
+    "remuneration": 125000
+  },
+  {
+    "id": 13,
+    "level": 13,
+    "remuneration": 250000
+  },
+  {
+    "id": 14,
+    "level": 14,
+    "remuneration": 500000
+  },
+  {
+    "id": 15,
+    "level": 15,
+    "remuneration": 1000000
+  }
+]

@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'Millionaire' target in the 'Millionaire' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#define isFourInch ([UIScreen mainScreen].bounds.size.height == 568 )
+#define isIpad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define AD_UNIT_ID                             @"ca-app-pub-1142829985381689/1972353859"
+#define INTERSTITIAL_AD_UNIT_ID                @"ca-app-pub-1142829985381689/3449087053"
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import<SystemConfiguration/SystemConfiguration.h>
+    #import<MobileCoreServices/MobileCoreServices.h>
+    #import "AppConstants.h"
+    #import "UIView+SafeArea.h"
+    #import "RestClient.h"
+    #import "Millionaire_eng_free-Swift.h"
+
+#endif
