@@ -1,0 +1,170 @@
+{% extends 'bootstrap4/bootstrap4.html' %}
+
+{% load bootstrap4 %}
+
+{% block bootstrap4_extra_head %}
+    <head>
+        <title>Edit question</title>
+    </head>
+{% endblock %}
+
+{% block bootstrap4_content %}
+    {% bootstrap_form_errors form %}
+
+    {% for question in question_lang %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card card-succes">
+                        <div class="card-header bg-warning" align="center">Edit question</div>
+                        <div class="card-block">
+                            <form role="form" method="post"
+                                  action='{% url 'appadmin:question_edit_api' pk=question.id %}'
+                                  id="post-form{{ forloop.counter }}" style="padding: 20px;" autocomplete="off">
+                                {% csrf_token %}
+
+                                <div class="column-1" align="center">
+                                    <h3>{{ question.question.bundle.display_name }}</h3>
+                                    <h6>Language {{ form.language }}&emsp;Difficulty {{ form.difficulty }}</h6>
+                                </div>
+                                <div class="column-2" align="center" style="padding-left: 10%; padding-right: 10%;">
+                                    <h3>{% bootstrap_field form.question size="medium" %}</h3>
+                                </div>
+                                <div class="column-3" align="center" style="padding: 10px;">
+                                    <h3>Answers</h3>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            {% bootstrap_field form.answer1 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer1" required>' %}
+                                            {% bootstrap_field form.answer2 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer2">' %}
+                                        </div>
+                                        <div class="col-sm">
+                                            {% bootstrap_field form.answer3 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer3">' %}
+                                            {% bootstrap_field form.answer4 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer4">' %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div align="center">{% buttons submit='Save' reset="Delete" %}{% endbuttons %}</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        {% for question in question_lang %}
+            var language_option = $("#post-form{{ forloop.counter }}").find("#id_language");
+            language_option.append($('<option>', {
+                value: {{ question.language.id }},
+                text: '{{ question.language.name|escapejs }}'
+            }));
+
+            var difficulty_option = $("#post-form{{ forloop.counter }}").find("#id_difficulty");
+            difficulty_option.val({{ question.question.difficulty.id }});
+            difficulty_option.change(function () {
+                changeAllDifficulties(this.value);
+            });
+
+            $("#post-form{{ forloop.counter }}").find("#id_question").val('{{ question.text|escapejs }}');
+            $("#post-form{{ forloop.counter }}").find("#id_answer1").val('{{ question.answer1|escapejs }}');
+            $("#post-form{{ forloop.counter }}").find("#id_answer2").val('{{ question.answer2|escapejs }}');
+            $("#post-form{{ forloop.counter }}").find("#id_answer3").val('{{ question.answer3|escapejs }}');
+            $("#post-form{{ forloop.counter }}").find("#id_answer4").val('{{ question.answer4|escapejs }}');
+
+            var correct_answer = '{{ question.correct_answer|escapejs }}';
+            var answers_array = ['{{ question.answer1|escapejs }}',
+                '{{ question.answer2|escapejs }}',
+                '{{ question.answer3|escapejs }}',
+                '{{ question.answer4|escapejs }}'];
+            var id_answer = "id_answer" + ($.inArray(correct_answer, answers_array) + 1);
+            $("#post-form{{ forloop.counter }}").find('input:radio[name="correct_answer"][id=' + id_answer + ']').attr('checked', true);
+        {% endfor %}
+
+        function changeAllDifficulties(difficulty) {
+            {% for question in question_lang %}
+                var difficulty_option = $("#post-form{{ forloop.counter }}").find("#id_difficulty");
+                difficulty_option.val(difficulty);
+            {% endfor %}
+        };
+    </script>
+
+    <script>
+        {% for question in question_lang %}
+            var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+            function csrfSafeMethod(method) {
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+            };
+
+            $.ajaxSetup({
+                beforeSend: function (xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                }
+            });
+
+            $('#post-form{{ forloop.counter }}').on('submit', function (event) {
+                event.preventDefault();
+
+                var correct_answer_radio = $("input:radio[name ='correct_answer']:checked");
+                var correct_answer_radio_id = correct_answer_radio.attr('id');
+                var correct_answer_text = $("#" + correct_answer_radio_id).val();
+
+                var serialized_data = $(this).serialize();
+                serialized_data += '&correct_answer_string=' + correct_answer_text;
+
+                $.ajax({
+                    url: "{% url 'appadmin:question_edit_api' pk=question.id %}",
+                    type: "patch",
+                    cache: 'false',
+                    dataType: "json",
+                    async: 'true',
+                    data: serialized_data,
+
+                    success: function (data) {
+                        alert(data['message']);
+                        location.reload();
+                    },
+                    error: function (data) {
+                        alert(data['responseJSON']);
+                    },
+                });
+            });
+
+            $('#post-form{{ forloop.counter }}').on('reset', function (event) {
+                event.preventDefault();
+
+                $.ajax({
+                    url: "{% url 'appadmin:question_delete_api' pk=question.id %}",
+                    type: "delete",
+                    cache: 'false',
+                    dataType: "json",
+                    async: 'true',
+
+                    success: function (data) {
+                        if (data['back']) {
+                            alert(data['message']);
+                            if (!'{{ request.META.HTTP_REFERER }}') {
+                                var url = '{% url 'appadmin:bundle_detail' pk=question.question.bundle.id %}';
+                                location.href = url;
+                            } else {
+                                var url = '{{ request.META.HTTP_REFERER }}';
+                                location.href = url;
+                            }
+                        } else {
+                            alert(data['message']);
+                            location.reload();
+                        }
+                    },
+                    error: function (data) {
+                        alert(data['responseJSON']);
+                    },
+                });
+            });
+        {% endfor %}
+    </script>
+
+{% endblock %}

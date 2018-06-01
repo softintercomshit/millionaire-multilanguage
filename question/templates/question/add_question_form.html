@@ -1,0 +1,98 @@
+{% extends 'bootstrap4/bootstrap4.html' %}
+
+{% load bootstrap4 %}
+
+{% block bootstrap4_extra_head %}
+    <head>
+        <title>Add new question</title>
+    </head>
+{% endblock %}
+
+{% block bootstrap4_content %}
+    {% bootstrap_form_errors form %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-succes">
+                    <div class="card-header bg-warning" align="center">Add new question</div>
+                    <div class="card-block">
+                        <form role="form" method="post" action='{% url 'appadmin:add_question_api' %}'
+                              id="post-form" style="padding: 20px;" autocomplete="off">
+
+                            {% csrf_token %}
+                            <div class="column-1" align="center">
+                                <h3>{{ bundle.display_name }}</h3>
+                                <h6>Language {{ form.language }}&emsp;Difficulty {{ form.difficulty }}</h6>
+                            </div>
+                            <div class="column-2" align="center" style="padding-left: 10%; padding-right: 10%;">
+                                <h3>{% bootstrap_field form.question size="medium" %}</h3>
+                            </div>
+                            <div class="column-3" align="center" style="padding: 10px;">
+                                <h3>Answers</h3>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        {% bootstrap_field form.answer1 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer1" required>' %}
+                                        {% bootstrap_field form.answer2 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer2">' %}
+                                    </div>
+                                    <div class="col-sm">
+                                        {% bootstrap_field form.answer3 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer3">' %}
+                                        {% bootstrap_field form.answer4 show_label=False addon_after='<input type="radio" name="correct_answer" id="id_answer4">' %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div align="center">{% buttons submit='Save' reset="Cancel" %}{% endbuttons %}</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+
+        $('#post-form').on('submit', function (event) {
+            event.preventDefault();
+            var correct_answer_radio = $("input:radio[name ='correct_answer']:checked");
+            var correct_answer_radio_id = correct_answer_radio.attr('id');
+            var correct_answer_text = $("#" + correct_answer_radio_id).val();
+            correct_answer_radio.val(correct_answer_text);
+
+            function csrfSafeMethod(method) {
+                // these HTTP methods do not require CSRF protection
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+            }
+
+            $.ajaxSetup({
+                beforeSend: function (xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                }
+            });
+
+            var serialized_data = $(this).serialize();
+            serialized_data += '&bundle=' + {{ bundle.id }};
+
+            $.ajax({
+                url: "{% url 'appadmin:add_question_api' %}",
+                type: "post",
+                cache: 'false',
+                dataType: "json",
+                async: 'true',
+                data: serialized_data,
+
+                success: function (data) {
+                    alert(data);
+                    $('#post-form')[0].reset();
+                },
+                error: function (data) {
+                    alert(data['responseJSON']);
+                },
+            });
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+
+ul#ulpagination {
+    flex-wrap: wrap!important;
+    flex-direction: row!important;
+}
+
+
+ul#ulpagination li:nth-child(2n) {
+    display: inline-block!important;
+    list-style: none!important;
+}

@@ -1,0 +1,37 @@
+{% extends 'bootstrap4/bootstrap4.html' %}
+
+{% load bootstrap4 %}
+
+{% block bootstrap4_extra_head %}
+    <head>
+        <title>Bundles</title>
+    </head>
+{% endblock %}
+
+{% block bootstrap4_content %}
+    <div class="container" style="padding-left: 20%; padding-right: 20%;">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-succes">
+                    <div class="card-header bg-warning" align="center">BUNDLES</div>
+                    <div class="card-block" align="center">
+                        <ul>
+                            {% for bundle in object_list %}
+                                <br>
+                                <a href="{% url 'appadmin:bundle_detail' pk=bundle.id %}" style="font-size: x-large">
+                                    {{ bundle.display_name }}
+                                </a>
+                                <br>
+                            {% empty %}
+                                <li>No bundles yet.</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+{% endblock %}
